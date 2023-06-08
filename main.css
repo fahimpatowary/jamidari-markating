@@ -336,6 +336,14 @@ nav{
 /* Top Nevber end */
 
 /* Mid NevBer start */
+.MidNevScrol {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 999999999;
+}
+
 .MidNev{
   background-color: #dae7f7;
   color: black;
@@ -668,6 +676,8 @@ input:focus,input:hover{
 
 .horizontal-menu ul li a{
   color: #3e3e3e;
+  font-weight: 600;
+  font-size: 17px;
 }
 
 .horizontal-menu ul li a:hover{
@@ -1716,6 +1726,7 @@ footer ul li a {
   font-weight: 700;
   line-height: 28px;
   text-transform: capitalize;
+  margin-bottom: 0;
 }
 
 .packagesCard{
@@ -1723,6 +1734,15 @@ footer ul li a {
   border-radius: 10px;
   margin-bottom: 20px;
   border: 1px solid rgb(178, 178, 178);
+  transition: all .5s;
+}
+
+.packagesCard:hover {
+  box-shadow: 0 0 10px 1px #b9b8b8;
+  border: none;
+  transform: translateY(-8px);
+  cursor: pointer;
+  z-index: 0;
 }
 
 .packagesCard h4{

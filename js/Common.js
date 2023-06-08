@@ -28,18 +28,19 @@ ImgiD.addEventListener("click", () => {
 window.addEventListener("scroll", () => {
   let TopNev = document.querySelector(".TopNev");
   let MidNev = document.querySelector(".MidNev");
+  let BotNev = document.querySelector(".BottomNev");
   let MoboTop = document.querySelector(".MoboTop");
 
   if (window.scrollY > 100) {
     TopNev.style.display = "none";
-    MidNev.style.display = "block";
-    MidNev.classList.add("MidNevScrol")
-    MoboTop.classList.add("pixedMobilnem")
+    MidNev.style.display = "none";
+    BotNev.classList.add("MidNevScrol")
+    MoboTop.classList.add("MidNevScrol")
   } else {
     TopNev.style.display = "block";
     MidNev.style.display = "block";
-    MidNev.classList.remove("MidNevScrol")
-    MoboTop.classList.remove("pixedMobilnem")
+    BotNev.classList.remove("MidNevScrol")
+    MoboTop.classList.remove("MidNevScrol")
   }
 });
 
