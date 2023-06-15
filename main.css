@@ -1895,6 +1895,90 @@ footer ul li a {
 }
 /* PackagesHeros end */
 
+/* packages start */
+.servicesSetails form{
+  box-shadow: 0 0 10px 1px rgb(169, 169, 169);
+  height: min-content;
+  display: block;
+  padding: 20px;
+  border-radius: 7px;
+  margin-bottom: 5px;
+}
+
+.servicesSetails form label,
+.servicesSetails form input,
+.servicesSetails textarea,
+.servicesSetails select{
+  display: block !important;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.servicesSetails form input{
+  float: none;
+}
+
+.servicesSetails textarea,
+.servicesSetails select{
+  border: 1px solid rgb(125, 125, 125);
+  outline: none;
+  border-radius: 7px;
+  padding: 10px;
+}
+
+.servicesSetails form label{
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.services-left h3{
+  font-weight: 600;
+  color: var(--logoColor-1);
+}
+
+.services-left ul li i{
+  padding: 5px;
+  color: white;
+  border-radius: 50%;
+  background-color: var(--logoColor-2);
+}
+
+.services-left ul li{
+  margin-bottom: 10px !important;
+  display: block;
+}
+
+.callBtn i{
+  padding: 15px;
+  border-radius: 50%;
+  background-color: var(--logoColor-1);
+  color: white;
+  font-size: 20px;
+  animation-duration: 1.8s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-name: grow;
+  margin-top: 20px;
+  height: 50px;
+  width: 50px;
+}
+
+@keyframes grow {
+  0% {
+    scale: .9;
+  }
+
+  50% {
+    scale: 1.2;
+    /* background-color: var(--servocehover); */
+  }
+
+  100% {
+    scale: .9;
+  }
+}
+/* packages end */
+
 :root {
   --logoColor-1: #2c66af;
   --logoColor-2: #ff863f;
