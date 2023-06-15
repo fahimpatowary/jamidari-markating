@@ -1931,7 +1931,12 @@ footer ul li a {
   font-size: 18px;
 }
 
-.services-left h3{
+.services-left{
+  border-right: 3px solid var(--logoColor-1);
+}
+
+.services-left h3,
+.services-right h3{
   font-weight: 600;
   color: var(--logoColor-1);
 }
@@ -1944,8 +1949,11 @@ footer ul li a {
 }
 
 .services-left ul li{
-  margin-bottom: 10px !important;
   display: block;
+}
+
+.services-left ul li:not(:last-child){
+  margin-bottom: 10px !important;
 }
 
 .callBtn i{
